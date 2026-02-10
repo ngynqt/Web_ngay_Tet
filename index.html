@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào Đón Tết Nguyên Đán 2026 - Website Tết Việt Nam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title">🎆 Tết Nguyên Đán 2026 🎆</h1>
+            <p class="subtitle">Chào đón năm mới, phúc lộc, an khang!</p>
+        </div>
+    </header>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2>Đếm Ngược Ngày Tết</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">0</span>
+                    <span class="countdown-label">Ngày</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">0</span>
+                    <span class="countdown-label">Giờ</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">0</span>
+                    <span class="countdown-label">Phút</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">0</span>
+                    <span class="countdown-label">Giây</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wishes Section -->
+    <section class="wishes-section">
+        <div class="container">
+            <h2>Lời Chúc Tết</h2>
+            <div class="wishes-carousel">
+                <div class="wish-card">
+                    <p>"Chúc một năm mới an khang, thịnh vượng!"</p>
+                    <span>- Truyền thống Tết Việt</span>
+                </div>
+                <div class="wish-card">
+                    <p>"Muôn điều tốt lành sẽ đến với bạn trong năm mới"</p>
+                    <span>- Lời chúc phổ biến</span>
+                </div>
+                <div class="wish-card">
+                    <p>"Tết này, chúc bạn sức khỏe, tài lộc và hạnh phúc"</p>
+                    <span>- Lời chúc chân thành</span>
+                </div>
+                <div class="wish-card">
+                    <p>"Năm mới, mong rằng bạn sẽ gặt hạt giống của những nỗ lực"</p>
+                    <span>- Lời chúc ý nghĩa</span>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="previousWish()" class="nav-btn">❮</button>
+                <button onclick="nextWish()" class="nav-btn">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <section class="menu-section">
+        <div class="container">
+            <h2>Kho Kiến Thức Tết</h2>
+            <div class="tabs">
+                <button class="tab-button active" onclick="showTab('foods')">🍲 Món Ăn Tết</button>
+                <button class="tab-button" onclick="showTab('games')">🎮 Trò Chơi Tết</button>
+                <button class="tab-button" onclick="showTab('customs')">🎋 Phong Tục Tết</button>
+            </div>
+
+            <!-- Foods Tab -->
+            <div id="foods" class="tab-content active">
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>🥟 Bánh Chưng</h3>
+                        <p><strong>Ý Nghĩa:</strong> Biểu tượng của đất trời, mặt trái đất.</p>
+                        <p><strong>Cách Làm:</strong></p>
+                        <ol>
+                            <li>Chuẩn bị gạo nếp, đậu xanh, thịt ba chỉ</li>
+                            <li>Gạo nếp và đậu xanh được ngâm nước 8 tiếng</li>
+                            <li>Thịt nấu tới khi mềm, cắt thành khối nhỏ</li>
+                            <li>Gói bánh hình vuông với lá chuối</li>
+                            <li>Nấu bánh trong 8-12 giờ</li>
+                        </ol>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🍌 Bánh Tét</h3>
+                        <p><strong>Ý Nghĩa:</strong> Biểu tượng của sự tròn đầy và may mắn.</p>
+                        <p><strong>Cách Làm:</strong></p>
+                        <ol>
+                            <li>Chuẩn bị nguyên liệu tương tự bánh chưng</li>
+                            <li>Gói bánh hình trụ tròn với lá chuối</li>
+                            <li>Buộc chắc bằng sợi cỏ hoặc chỉ</li>
+                            <li>Nấu trong nước sôi 6-8 tiếng</li>
+                            <li>Để bánh nguội rồi cắt thành lát mỏng</li>
+                        </ol>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🍗 Gà Luộc</h3>
+                        <p><strong>Ý Nghĩa:</strong> Tượng trưng cho lòng hiếu thảo và gia đình.</p>
+                        <p><strong>Cách Làm:</strong></p>
+                        <ol>
+                            <li>Chọn gà tươi, rửa sạch</li>
+                            <li>Đun nước với gừng, hành, muối</li>
+                            <li>Cho gà vào nước sôi</li>
+                            <li>Nấu 45-60 phút tới khi chín</li>
+                            <li>Cho gà vào nước lạnh để thắt chặt da</li>
+                        </ol>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🍖 Thịt Heo Quay</h3>
+                        <p><strong>Ý Nghĩa:</strong> May mắn, tấn tài, lợi lộc.</p>
+                        <p><strong>Cách Làm:</strong></p>
+                        <ol>
+                            <li>Chọn ba chỉ hoặc sườn, sạch sẽ</li>
+                            <li>Ướp gia vị: mắm, nước mía, tỏi</li>
+                            <li>Để ướp 4-8 giờ</li>
+                            <li>Quay trên than hoặc trong lò 45-60 phút</li>
+                            <li>Cho sốt mía lên cơm nóng để da giòn bóng</li>
+                        </ol>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🐟 Cá Nướng/Luộc</h3>
+                        <p><strong>Ý Nghĩa:</strong> Tấn tài, phát tài, "Cá" - "Phát" cùng âm.</p>
+                        <p><strong>Cách Làm (Nướng):</strong></p>
+                        <ol>
+                            <li>Chọn cá tươi, làm sạch đặc biệt loại cá rô phi</li>
+                            <li>Ướp gia vị: muối, tiêu, ớt, dưỡng cham</li>
+                            <li>Nhét hành, gừng, thơm vào bụng cá</li>
+                            <li>Nướng trên than hoặc lò nướng 20-30 phút</li>
+                            <li>Nước chấm: nước mắm chua cay, chanh</li>
+                        </ol>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🍯 Mứt Tết</h3>
+                        <p><strong>Ý Nghĩa:</strong> Ngọt ngào, hạnh phúc trong gia đình.</p>
+                        <p><strong>Cách Làm:</strong></p>
+                        <ol>
+                            <li>Chọn các loại trái cây: dừa, dâu, chuối, gừng</li>
+                            <li>Rửa sạch, cắt thành khối nhỏ</li>
+                            <li>Nấu với đường, nước cốt chanh, hạt vani</li>
+                            <li>Nấu liên tục 2-3 tiếng cho tới khi đặc</li>
+                            <li>Đổ vào hộp thủy tinh, để nguội rồi dùng</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Games Tab -->
+            <div id="games" class="tab-content">
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>🎴 Bài Tây</h3>
+                        <p><strong>Luật Chơi:</strong></p>
+                        <ul>
+                            <li>Có thể chơi một lúc 2-6 người</li>
+                            <li>Cử thủ chia bài: mỗi người lần lượt nhận 3 lá bài</li>
+                            <li>Người có điểm cao nhất chiến thắng</li>
+                            <li>Thường chơi trong cuộc tụ tập gia đình</li>
+                            <li>Có nhiều biến thể: Tiến lên, Phỏm, Phơi...</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🎲 Xóc Đĩa</h3>
+                        <p><strong>Luật Chơi:</strong></p>
+                        <ul>
+                            <li>Chuẩn bị 4 con xúc xắc (hoặc 4 đồng xu)</li>
+                            <li>Nhóm người xung quanh 1 chiếc đĩa</li>
+                            <li>Cử thủ lắc xúc xắc hoặc đồng xu trong đĩa</li>
+                            <li>Cược vào kết quả: tài (chẵn) hay lỗ (lẻ)</li>
+                            <li>Trò chơi nhất thích cho Tết</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🎯 Bắn Cua</h3>
+                        <p><strong>Luật Chơi:</strong></p>
+                        <ul>
+                            <li>Chơi bằng 3 con xúc xắc</li>
+                            <li>Bàn chơi có 6 hình: Cua, Cá, Gà, Nai, Thỏ, Rươu</li>
+                            <li>Lắc xúc xắc - Kết quả ra sẽ quyết định thắng thua</li>
+                            <li>Người chơi cược vào các ô trên bàn</li>
+                            <li>Trò chơi giản dị, vui nhộn và hấp dẫn</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🧧 Bốc Lá Số</h3>
+                        <p><strong>Luật Chơi:</strong></p>
+                        <ul>
+                            <li>Mỗi người bốc một lá số bất kỳ</li>
+                            <li>Lá số có chứa lời tiên tri, câu đối hoặc lộc</li>
+                            <li>Mỗi người giải thích ý nghĩa lá số mình bốc</li>
+                            <li>Có thể chơi để giải trí hoặc tìm hiểu vận may</li>
+                            <li>Rất phổ biến tại các chùa chiều 30 Tết</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🏃 Nhảy Dây - Đá Cầu</h3>
+                        <p><strong>Luật Chơi:</strong></p>
+                        <ul>
+                            <li><strong>Nhảy Dây:</strong> Nhóm bạn chơi nhảy dây cùng nhau</li>
+                            <li>Dây được nối tay vào người, quay từng lúc</li>
+                            <li><strong>Đá Cầu:</strong> Dùng chân đá cầu qua lại với bạn</li>
+                            <li>Người nào đá liên tục lâu nhất chiến thắng</li>
+                            <li>Trò chơi tốt cho sức khỏe, đặc biệt cho trẻ em</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🎭 Múa Lân - Múa Sư Tử</h3>
+                        <p><strong>Luật Chơi:</strong></p>
+                        <ul>
+                            <li>Nhóm người phối hợp múa lân hoặc sư tử</li>
+                            <li>Lân/Sư tử theo nhịp trống, chiếng và lục côn</li>
+                            <li>Người ngoài phía trên cầu cầu (điều khiển đầu)</li>
+                            <li>Phía dưới điều khiển thân thể (phía sau)</li>
+                            <li>Múa để mang lại may mắn cho năm mới</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customs Tab -->
+            <div id="customs" class="tab-content">
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>🧹 Chùi Nhà</h3>
+                        <p><strong>Ý Nghĩa:</strong> Quét sạch "xui xẻo" của năm cũ, tiếp đón "vận may" năm mới.</p>
+                        <p><strong>Cách Thực Hiện:</strong></p>
+                        <ul>
+                            <li>Nên làm vào ngày 29 Tháng Chạp hoặc 30 Tháng Chạp</li>
+                            <li>Quét từ phòng ngoài vào phòng trong</li>
+                            <li>Quét từ trên xuống dưới, từ mép sàn vào giữa</li>
+                            <li>Không nên chùi nhà sau giao thừa</li>
+                            <li>Lau chế động, chân tường, chân giường</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🌸 Cắm Hoa Tết</h3>
+                        <p><strong>Ý Nghĩa:</strong> Hoa tươi sẽ mang lại sự tươi vui, hạnh phúc cho gia đình.</p>
+                        <p><strong>Những Loại Hoa Phổ Biến:</strong></p>
+                        <ul>
+                            <li><strong>Đào - Anh Đào:</strong> May mắn, đỏ rực rỡ</li>
+                            <li><strong>Mai - Quất:</strong> Vàng tươi, tượng trưng lộc tài</li>
+                            <li><strong>Hoa Hồng:</strong> Tình yêu, tình cảm gia đình</li>
+                            <li><strong>Hoa Ly:</strong> Tinh khôi, thánh sạch</li>
+                            <li>Nên cắm hoa tối ngày 30 hoặc sáng ngày mùng 1 Tết</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🧧 Lì Xì - Bao Lộc</h3>
+                        <p><strong>Ý Nghĩa:</strong> Trao gửi lời chúc và tài lộc cho con em và người thân.</p>
+                        <p><strong>Cách Thực Hiện:</strong></p>
+                        <ul>
+                            <li>Người lớn cho lì xì cho trẻ em và người chưa lập gia đình</li>
+                            <li>Bao lộc được chuẩn bị với tiền mới, sạch sẽ</li>
+                            <li>Trao lì xì bằng cả hai tay hoặc cả hai bàn tay</li>
+                            <li>Người nhận cảm ơn và chúc mừng lại</li>
+                            <li>Thường làm vào sáng mùng 1 Tết hoặc những ngày đầu Tết</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🙏 Thăm Viếng - Xin Lộc</h3>
+                        <p><strong>Ý Nghĩa:</strong> Kính tôn tổ tiên, xin lộc từ thần linh cho năm mới.</p>
+                        <p><strong>Cách Thực Hiện:</strong></p>
+                        <ul>
+                            <li>Thắp hương, nến trước bàn thờ vào sáng mùng 1</li>
+                            <li>Chuẩn bị trái cây, bánh, bánh chưng</li>
+                            <li>Cúi đầu tỏ lòng tôn kính</li>
+                            <li>Xin lộc để cả năm được bình an, may mắn</li>
+                            <li>Thăm viếng mộ tổ tiên ngày 30 Tháng Chạp</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🎆 Bắn Pháo Hoa - Nổ Pháo</h3>
+                        <p><strong>Ý Nghĩa:</strong> Đỏ, tiếng ồn để xua đuổi tà ma, chào đón năm mới.</p>
+                        <p><strong>Cách Thực Hiện:</strong></p>
+                        <ul>
+                            <li>Nổ pháo từ 24h đêm 30 Tháng Chạp (giao thừa)</li>
+                            <li>Nổ pháo để xua tan "xui xẻo"</li>
+                            <li>Tiếng pháo như tiếng cười rộn ràng của người dân</li>
+                            <li>Nên tránh vị trí gần kho xăng dầu, bệnh viện</li>
+                            <li>Một số địa phương đã hạn chế hoặc cấm nổ pháo</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>🎊 Mặc Quần Áo Mới - Sơn Tươi</h3>
+                        <p><strong>Ý Nghĩa:</strong> Mặc mới từ đầu, bắt đầu một năm mới tươi đẹp, may mắn.</p>
+                        <p><strong>Cách Thực Hiện:</strong></p>
+                        <ul>
+                            <li>Nên mặc quần áo mới từ sáng mùng 1 Tết</li>
+                            <li>Quần áo màu sắc rực rỡ, tươi vui</li>
+                            <li>Đặc biệt nên mặc màu đỏ, vàng để hút tài lộc</li>
+                            <li>Nên chọn bộ quần áo may riêng, mới tinh</li>
+                            <li>Cắt tóc, sơn móng sạch sẽ để đón Tết</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 - Website Tết Nguyên Đán | 🧧 Chúc mừng năm mới! 🧧</p>
+            <p>Tết là dịp để gia đình sum vầy, đoàn tụ và gắn bó với nhau</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
